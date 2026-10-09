@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Frecuencia_Cardiaca.MainPage">
+
+   
+        <StackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+            <Label
+                Text="Ingrese los latidos tomados en 15 segundos"
+                Style="{StaticResource SubHeadline}" />
+
+            <Entry Placeholder="Latidos" x:Name="Latidos" Keyboard="Numeric"/>
+            <Entry Placeholder="Total" x:Name="Total" IsEnabled="False"/>
+
+            <Button Text="Calcular Frecuencia" Clicked="Btn_Calcular"/>
+            
+        </StackLayout>
+    
+
+</ContentPage>
